@@ -62,7 +62,7 @@ echo "remoteip 192.168.8.2-254" >> /etc/pptpd.conf
 echo "ms-dns 8.8.8.8" >> /etc/ppp/options.pptpd
 echo "ms-dns 8.8.4.4" >> /etc/ppp/options.pptpd
 
-pass=`openssl rand 6 -base64`
+pass=`openssl rand 10 -base64`
 if [ "$1" != "" ]
   then pass=$1
 fi
